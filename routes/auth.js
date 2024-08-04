@@ -14,4 +14,5 @@ router.post('/recover-password',recoverPasswordValidator,validate,authController
 router.put('/change-password',changePasswordValidtor,validate,isAuth,authController.changePassword);
 router.put('/update-profile',updateProfileValidator,validate,isAuth,authController.updateProfile);
 router.get("/current-user",isAuth,authController.currentUser);
+
 module.exports = router;
